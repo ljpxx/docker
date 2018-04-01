@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.domain.Resource" table="resource_application">
+		<id name="id" type="string" column="id">
+			<generator class="assigned"/>
+		</id>
+		
+		 <property name="telphone" column="telphone" type="string" length="20"/>
+		 <property name="nickname" column="nickname" type="string" length="40"/>
+		 <property name="email" column="email" type="string" length="40"/>
+		 <property name="number" column="number" type="string" length="20"/>
+		 <property name="userid" column="userid" type="string" length="20"/>
+		 <property name="title" column="title" type="string"/>
+		 <property name="original" column="original" type="string"/>
+		 <property name="starttime" column="starttime" type="date"/>
+		 <property name="endtime" column="endtime" type="date"/>
+		 <property name="system" column="system" type="string" length="30"/>
+		 <property name="software" column="software" type="string" length="50"/>
+		 <property name="applicantnote" column="applicantnote" type="string"/>
+		 <property name="opinion" column="opinion" type="string"/>
+		 <property name="managernote" column="managernote" type="string"/>
+		 <property name="createtime" column="createtime" type="timestamp"/>
+		 <property name="lastedittime" column="lastedittime" type="timestamp"/>
+		 <property name="managerid" column="managerid" type="string" length="20"/>
+		 <property name="result" column="result" type="string" length="20"/>
+		 <property name="resulttime" column="resulttime" type="timestamp"/>
+		 <property name="managername" column="managername" type="string" length="30"/>
+	</class>
+	
+</hibernate-mapping>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+       
+	 <package name="default" namespace="/" extends="struts-default,json-default">
+	        <action name="login" class="com.action.LoginAction" method="f">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action> 
+	        <action name="registered" class="com.action.RegisteredAction" method="f">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action> 
+	        <action name="getmyinfo" class="com.action.GetMyInfo" method="f">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action> 
+	        <action name="getmyinfo_save" class="com.action.GetMyInfo" method="save">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	        <action name="getmyinfo_nickname" class="com.action.GetMyInfo" method="getnickname">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	        <action name="getmyinfo_getalluser" class="com.action.GetMyInfo" method="getalluser">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	        <action name="getmyinfo_manager" class="com.action.GetMyInfo" method="manager">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	        <action name="getmyinfo_delmanager" class="com.action.GetMyInfo" method="delmanager">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	        <action name="getmyinfo_getinfo" class="com.action.GetMyInfo" method="getinfo">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	        <action name="resource_submit" class="com.action.ResourceAction" method="submit">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	        <action name="resource_mysumbit" class="com.action.ResourceAction" method="my_sumbit">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	        <action name="resource_getdetail" class="com.action.ResourceAction" method="getdetail">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	        <action name="resource_edit_save" class="com.action.ResourceAction" method="edit_save">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	        <action name="resource_delete" class="com.action.ResourceAction" method="delete">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	        <action name="resource_manageresult" class="com.action.ResourceAction" method="manageresult">
+	        	<result type="json" name="ajax" >
+	            	<param name="root">result</param>    
+	            </result>
+	        </action>
+	 </package>
+	 
+	 
+</struts>
+    
